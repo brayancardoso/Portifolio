@@ -43,7 +43,7 @@ habilidades.forEach((item, index) => {
 
     // Define mensagens personalizadas para cada habilidade
     const mensagens = [
-        'Experiência de 3 anos com ReactJS.',
+        'Aprendendo o Framework ReactJS.',
         'Projetos utilizando HTML5 modernos.',
         'Estilização avançada com CSS3.',
         'JavaScript moderno com boas práticas.'
