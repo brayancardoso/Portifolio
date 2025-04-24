@@ -1,0 +1,387 @@
+/* Reset básico para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+    text-shadow: 2px 2px 4px #e6d6d6; /* Sombra para dos textos gerais*/
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    background-color: #020101; /* Fundo suave para melhor contraste */
+    color: rgb(8, 8, 8); /* Cor do texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+.menu {
+   
+    padding: 10px 0; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto do menu */
+    font-size: 1.2rem; /* Tamanho da fonte do menu */
+}
+.menu ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+}
+.menu a {
+    text-decoration: none; /* Remove a linha azul debaixo dos itens */
+    color: #ffffff; /* Cor do texto dos links */
+    padding: 10px 20px; /* Espaçamento interno dos links */
+    display: inline-block; /* Exibe os links em linha */
+    transition: background-color 0.3s ease; /* Transição suave para o efeito de hover */
+}
+.menu a:hover {
+    text-decoration: underline; /* Sublinha o texto ao passar o mouse */
+    color:rgb(1, 1, 22); /* Cor do texto ao passar o mouse */
+     
+}
+.menu li {
+    display: inline; /* Exibe os itens da lista em linha */
+    margin: 0 20px; /* Margem entre os itens do menu */
+}
+/* Estilo para telas menores */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+.imagem-perfil {
+    display: flex; /* Garante que a imagem seja tratada como bloco */
+    margin: 20px auto; /* Centraliza a imagem e adiciona margem superior */
+    width: 400px; /* Ajusta a largura da imagem */
+    height: 400px; /* Ajusta a altura da imagem */
+    border-radius: 50%; /* Torna a imagem redonda */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra cinza mais suave */
+    object-fit: cover; /* Garante que a imagem se ajuste ao contêiner */
+}
+.imagem-perfil:hover {
+    transform: scale(1.20); /* Aumenta a imagem ao passar o mouse */
+    transition: transform 0.3s ease; /* Transição suave para o efeito de aumento */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+#titulo{
+    color:rgb(1, 1, 22); /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    font-weight: bold; /* Negrito para o título */
+    margin: 20px 0 ;/* Margem superior e inferior */
+}
+
+#sub{
+    text-align: center; /* Centraliza o texto */
+    font-weight: bold; /* Negrito para o subtítulo */
+    margin: 20px 0; /* Margem superior e inferior */
+    color: #ffffff; /* Cor do texto */
+    text-shadow: 2px 2px 4px rgba(253, 252, 252, 0.5); /* Sombra para o texto do subtítulo */
+}
+#titulo1{
+    color: rgb(1, 1, 22);
+font-size: 2.2rem;
+padding: 10px 0;;
+}
+.sobre{
+    text-align: justify; /* Centraliza o texto */
+    color: rgb(252, 252, 252);
+    font-size: 1.0rem; /* Tamanho da fonte do texto */
+    margin: 10px 10px 10px 10px; /* Margem superior e inferior */
+    padding: 5%; /* Espaçamento interno */
+}
+.sobre-mim{
+    text-align: justify; /* Centraliza o texto */
+    font-size: 1.0rem; /* Tamanho da fonte do texto */
+    margin: 5px 5px 5px 5px; /* Margem superior e inferior */
+    padding: 8%; /* Espaçamento interno */
+}
+#area-interesse{
+    color:rgb(1, 1, 22); /* Cor do texto */
+    text-align: justify; /* Centraliza o texto */
+    font-weight: bold; /* Negrito para o título */
+    margin: 20px 0; /* Margem superior e inferior */
+    font-size: 1.2rem; /* Tamanho da fonte do texto */
+}
+.projetos{
+    color: #ffffff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    margin: 10px 10px 10px 10px; /* Margem superior e inferior */
+    padding: 3%; /* Espaçamento interno */
+}
+.project {
+    border: solid 1px #bdbaba; /* Borda sólida com cor do projeto */
+    text-align: center; /* Centraliza o texto dentro do elemento */
+    box-shadow: #6b6a6a; /* Define a cor da sombra  do projeto */
+    font-size: 1.2rem; /* Define o tamanho da fonte do texto */
+    margin: 50px; /* Adiciona margem ao redor do elemento */
+    padding: 20px; /* Adiciona espaçamento interno */
+    width: 250px; /* Define a largura do elemento */
+    height: 250px; /* Define a altura do elemento */
+    display: inline-block; /* Permite que os elementos fiquem lado a lado */
+    border-radius: 10px; /* Arredonda os cantos do elemento */
+    position: relative; /* Define o contexto de posicionamento para os filhos */
+}
+
+.project img {
+    position: absolute; /* Posiciona a imagem em relação ao elemento pai */
+    top: 50%; /* Centraliza verticalmente a imagem */
+    left: 50%; /* Centraliza horizontalmente a imagem */
+    transform: translate(-50%, -50%); /* Ajusta a posição para o centro exato */
+    max-width: 100%; /* Garante que a largura da imagem não ultrapasse o contêiner */
+    max-height: 100%; /* Garante que a altura da imagem não ultrapasse o contêiner */
+}
+
+.project:hover {
+    
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transform: scale(1.20); /* Aumenta o tamanho ao passar o mouse */
+    transition: transform 0.3s ease; /* Transição suave para o efeito de aumento */
+}
+
+.habilidades{
+    color: #ffffff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    margin: 10px 10px 10px 10px; /* Margem superior e inferior */
+    padding: 3%; /* Espaçamento interno */
+}
+.habilidade{
+    border: solid 1px #bdbaba; /* Borda sólida com cor do projeto */
+    text-align: center; /* Centraliza o texto dentro do elemento */
+    box-shadow: #504f4f; /* Define a cor da sombra  do projeto */
+    font-size: 1.2rem; /* Define o tamanho da fonte do texto */
+    margin: 50px; /* Adiciona margem ao redor do elemento */
+    padding: 20px; /* Adiciona espaçamento interno */
+    width: 200px; /* Define a largura do elemento */
+    height: 200px; /* Define a altura do elemento */
+    display: inline-block; /* Permite que os elementos fiquem lado a lado */
+    border-radius: 10px; /* Arredonda os cantos do elemento */
+    position: relative; /* Define o contexto de posicionamento para os filhos */
+}
+
+.habilidade img {
+    position: absolute; /* Posiciona a imagem em relação ao elemento pai */
+    top: 50%; /* Centraliza verticalmente a imagem */
+    left: 50%; /* Centraliza horizontalmente a imagem */
+    transform: translate(-50%, -50%); /* Ajusta a posição para o centro exato */
+    max-width: 100%; /* Garante que a largura da imagem não ultrapasse o contêiner */
+    max-height: 100%; /* Garante que a altura da imagem não ultrapasse o contêiner */
+}
+
+.habilidade:hover {
+    
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transform: scale(1.20); /* Aumenta o tamanho ao passar o mouse */
+    transition: transform 0.3s ease; /* Transição suave para o efeito de aumento */
+}
+footer {
+    background-color:rgba(6, 6, 17, 0.733);
+    align-items: center; /* Centraliza os itens do rodapé */
+    padding: 30px  30px 30px 30px;
+    text-align: center; /* Centraliza o texto do rodapé */
+    text-decoration: none;
+    list-style: none; /* Remove os marcadores da lista */
+    color: #ffffff; /* Cor do texto do rodapé */    
+}
+.social-media{
+    margin: 10px 10px 10px 10px; /* Margem superior e inferior */
+    gap: 10px; /* Espaçamento entre os itens */
+    
+}
+.social-icon {
+    background-color:rgba(202, 190, 123, 0.733); /* Cor de fundo dos ícones */
+    color: #000; /* Cor do ícone */
+    padding: 10px; /* Adiciona espaçamento interno entre os itens */
+    width: 50px; /* Largura do ícone */
+    height: 50px; /* Altura do ícone */
+    border-radius: 80%; /* Arredonda os cantos do ícone */;
+    text-decoration: none; /* Remove a linha azul debaixo dos itens */
+}
+.social-icon:hover {
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transform: scale(1.20); /* Aumenta o tamanho ao passar o mouse */
+    transition: transform 0.3s ease; /* Transição suave para o efeito de aumento */
+}
+.tooltip {
+    position: absolute;
+    top: 50%; /* Posiciona abaixo do elemento pai */
+    left: 70%; /* Centraliza horizontalmente */
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+    max-width: 250px;
+}
+/* Fade-In com JavaScript */
+.escondido {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}
+#btn-topo {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    display: none;
+    background-color: #031e429d;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+#btn-topo.mostrar {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#btn-topo.ocultar {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    
+   
+    .imagem-perfil {
+        width: 100px; /* Reduza o tamanho da imagem */
+        height: 100px;
+    }
+
+    .social-media img {
+        width: 50px; /* Define um tamanho fixo para os ícones */
+        height: 50px;
+    }
+
+    .social-media {
+        gap: 5px; /* Reduza o espaçamento entre os ícones */
+    }
+    .project, .habilidade {
+        width: 150px; /* Reduza o tamanho dos projetos e habilidades */
+        height: 150px;
+        margin: 20px; /* Ajuste a margem para telas menores */
+    }
+    .sobre, .sobre-mim {
+        font-size: 0.9rem; /* Reduza o tamanho da fonte */
+        padding: 5%; /* Ajuste o espaçamento interno */
+    }
+    #titulo1 {
+        font-size: 1.5rem; /* Reduza o tamanho do título */
+    }
+    #titulo {
+        font-size: 1.8rem; /* Reduza o tamanho do título */
+    }
+    #sub {
+        font-size: 1.2rem; /* Reduza o tamanho do subtítulo */
+    }
+    .habilidades, .projetos {
+        font-size: 1.0rem; /* Reduza o tamanho do texto */
+        padding: 5%; /* Ajuste o espaçamento interno */
+    }
+    #area-interesse {
+        font-size: 0.9rem; /* Reduza o tamanho do texto */
+       text-align: left; /* Centraliza o texto */
+        padding: 1.0rem; /* Ajuste o espaçamento interno */
+        margin: 6px 6px 6px 6px; /* Margem superior e inferior */
+    }
+    .social-media{
+        transform: scale(1.30); /* Aumenta o tamanho ao passar o mouse */
+        transition: transform 0.2s ease; /* Transição suave para o efeito de aumento */
+        gap: 20px; /* Espaçamento entre os itens */
+    }
+  
+}
+@media (max-width: 480px) {
+   
+   
+    .imagem-perfil {
+        width: 80px; /* Reduza o tamanho da imagem */
+        height: 80px;
+    }
+
+    .social-media{
+        padding: 20px 10px 10px 10px; /* Adiciona espaçamento superior, inferior e laterais: esquerda e direita*/
+        transform: scale(1.30); /* Aumenta o tamanho ao passar o mouse */
+        transition: transform 0.2s ease; /* Transição suave para o efeito de aumento */
+        gap: 3px; /* Espaçamento entre os itens */
+    }
+    .project, .habilidade {
+        width: 120px; /* Reduza o tamanho dos projetos e habilidades */
+        height: 120px;
+        margin: 10px; /* Ajuste a margem para telas menores */
+    }
+    .sobre, .sobre-mim {
+        font-size: 0.8rem; /* Reduza o tamanho da fonte */
+        padding: 5%; /* Ajuste o espaçamento interno */
+    }
+    #titulo {
+        font-size: 1.8rem; /* Reduza o tamanho do título */
+    }
+   
+    #sub {
+        font-size: 0.9rem; /* Reduza o tamanho do subtítulo */
+    }
+}
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1001;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.95);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+    }
+
+    .nav-menu.open {
+        display: flex;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+    }
+
+    .nav-menu li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .nav-menu a {
+        color: white;
+        font-weight: bold;
+    }
+}
